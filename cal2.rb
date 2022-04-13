@@ -23,7 +23,6 @@ def calender_month(year: Date.today.year, month: Date.today.month)
 		print "\n"
 end
 
-
 def option_parse
     options = {}
   
