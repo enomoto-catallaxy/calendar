@@ -28,18 +28,17 @@ def option_parse
     options = {}
   
     OptionParser.new do |opts|
-      opts.on('-y', '--year YEAR') do |v|
+      opts.on('-y') do |v|
         options[:year] = v.to_i
       end
   
-      opts.on('-m', '--month MONTH') do |v|
+      opts.on('-m') do |v|
         options[:month] = v.to_i
       end
     end.parse!
   
     options
   end
-  
-  # パースした値を関数に渡す
+
   calender_month(**option_parse)
 
