@@ -30,7 +30,6 @@ def option_parse
       opts.on('-y') do |v|
         options[:year] = v.to_i
       end
-  
       opts.on('-m') do |v|
         options[:month] = v.to_i
       end
